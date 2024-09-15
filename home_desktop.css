@@ -1,0 +1,52 @@
+.container {
+  height: 50px;
+}
+.container .header {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 10px;
+  box-shadow: 1px 1px 3px gray;
+}
+.container .header > * {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.container .header .logo i {
+  font-size: 2rem;
+}
+.container .header .menu {
+  float: right;
+  height: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container .header .menu .menu-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.1s;
+}
+.container .header .menu .menu-item:last-child {
+  margin-right: 0px;
+}
+.container .header .menu .menu-item:hover {
+  color: blue;
+  font-size: 1.1rem;
+}
+.container .header .menu .close-menu-icon {
+  display: none;
+}
+.container .header .open-menu-icon {
+  display: none;
+}
+.container .header input[type=checkbox] {
+  display: none;
+}/*# sourceMappingURL=home_desktop.css.map */

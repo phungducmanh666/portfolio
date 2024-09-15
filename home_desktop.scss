@@ -1,0 +1,58 @@
+
+.container{
+    height: 50px;
+    .header{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 10px;
+        box-shadow: 1px 1px 3px gray;
+        >*{
+            display: inline-block;
+            vertical-align: bottom;
+        }
+        .logo{
+            i{
+                font-size: 2rem;
+            }
+        }
+        .menu{
+            float: right;
+            height: 100%;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            .menu-item{
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 20px;
+                margin-right: 10px;
+                cursor: pointer;
+                border-radius: 10px;
+                transition: all 0.1s;
+                &:last-child{
+                    margin-right: 0px;
+                }
+                &:hover{
+                    color: blue;
+                    font-size: 1.1rem;
+                }
+            }
+            .close-menu-icon{
+                display: none;
+            }
+        }
+        .open-menu-icon{
+            display: none;
+        }
+        input[type=checkbox]{
+            display: none;
+        }
+    }
+
+    
+
+}
